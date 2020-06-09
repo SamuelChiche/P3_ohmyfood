@@ -1,0 +1,30 @@
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* COLOR */
+/* FONT */
+/* HEADING */
+.heading {
+  width: 100%;
+  text-align: center;
+  background-color: #579c87;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.heading .heading__title {
+  margin: 0;
+  color: #fdcb46;
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HOMEPAGE */
+
+/*# sourceMappingURL=style.css.map */
