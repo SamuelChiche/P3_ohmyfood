@@ -1,4 +1,5 @@
 /* GENERAL */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +7,9 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
+
 /* COLOR */
 
 $primary-color: #579c87;
@@ -15,13 +18,21 @@ $font-color: #fdcb46;
 
 $menu-1_bg-color: #fcdfdb;
 
+$menu-1-color: #694145;
+
 $menu-2_bg-color: #fff5fe;
+
+$menu-2-color: #c77412 ;
 
 $menu-3_bg-color: #f9f9f9;
 
+$menu-3-color:#0886fa ;
+
 $menu-4_bg-color: #fdfffd;
 
-/* FONT */
+$menu-4-color: #72bf56;
+
+/* TYPOGRAPHIE */
 
 
 
@@ -34,7 +45,7 @@ $menu-4_bg-color: #fdfffd;
     padding-top: 40px;
     padding-bottom: 40px;
 
-    .heading__title {
+    &__title {
         margin: 0;
         color: $font-color;
         font-size: 3em;
@@ -44,3 +55,122 @@ $menu-4_bg-color: #fdfffd;
 
 /* HOMEPAGE */
 
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+    
+    &__menu-card {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 400px;
+        height: 600px;
+        margin: 50px 20px 10px 0px;
+        box-shadow: 0px 0px 5px 5px#d8d0d0;
+            
+        &--1 {
+            background-color: $menu-1_bg-color;
+        }
+
+        &--2 {
+            background-color: $menu-2_bg-color;
+        }
+
+        &--3 {
+            background-color: $menu-3_bg-color;
+        }
+
+        &--4 {
+            background-color: $menu-4_bg-color;
+        }
+        .menu {
+            &__heading {
+                &__image{
+                    height: 60px;
+                }
+                &__title {
+                    font-size: 2em;
+                    margin: 0;
+                    
+                    &--1 {
+                        font-family: 'Devonshire', cursive;
+                        color: $menu-1-color;
+                    }
+                    
+                    &--2 {
+                        font-family: 'Lobster Two', cursive;
+                        color: $menu-2-color; 
+                    }
+
+                    &--3 {
+                        font-family: 'Satisfy', cursive;
+                        color: $menu-3-color;
+                    }
+
+                    &--4 {
+                        font-family: 'Kaushan Script', cursive;
+                        color: $menu-4-color;
+                    }
+                }
+                
+                &__subtitle {
+                    font-size: 3em;
+                    margin-top: 20px;
+                    font-family: 'Kalam', cursive;
+                    
+                    &--1{
+                        font-size: 2.5em;
+                        text-transform: uppercase;
+                        color: $menu-1-color;
+                        font-family: 'Balsamiq Sans', cursive;
+                    }
+
+                    &--2 {
+                        color: #c77412;
+                        font-family: 'PT Serif', serif;
+                    }
+
+                    &--3 {
+                        color: #0886fa;
+                    }
+
+                    &--4 {
+                        color: #72bf56;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.upcoming {
+    background-color: $primary-color;
+    text-align: center;
+    border: 2px solid $primary-color;
+    border-radius: 8px;
+    color: $font-color;
+    align-content: center;
+    margin: 40px 750px 50px 750px;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: $primary-color;
+    padding: 30px 20px 30px 20px;
+    color: $font-color;
+    font-size: 1.5em;
+    position: sticky;
+    bottom: 0;
+
+}

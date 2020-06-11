@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Devonshire&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -19,51 +28,48 @@
         </a>
 
         <main class="main-container">
-            <section class="main-container__menu">
-                <!-- La note enchantée -->
-                <div class="menu-1">
-                    <a href="menu_1.html">
-                        <div class="menu-1__heading">
-
-                        </div>
-                    </a>
-            </section>
-                </div>
-            <section class="main-container__menu">
-                <!-- Le chic à la française -->
-                <div class="menu-2">
-                    <a href="menu_2.html">
-                        <div class="menu-2__heading">
-                        
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <section class="main-container__menu">
-                <!-- Le délice des papilles -->
-                <div class="menu-3">
-                    <a href="menu_3.html">
-                        <div class="menu-3__heading">
-                        
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <section class="main-container__menu">
-                <!-- La palette du gout -->
-                <div class="menu-4">
-                    <a href="menu_4.html">
-                        <div class="menu-4__heading">
-                        
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </main>    
+            <div class="main-container__menu-card main-container__menu-card--1">
+                <a class="menu" href="menu_1.html" id="menu-1">
+                    <div class="menu__heading">
+                        <img src="image/note-menu1.png" class="menu__heading__image">
+                        <h2 class="menu__heading__title menu__heading__title--1">La note enchantée</h2>
+                        <h3 class="menu__heading__subtitle menu__heading__subtitle--1">Menu</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="main-container__menu-card main-container__menu-card--2">
+                <a class="menu" href="menu_2.html" id="menu-2">
+                    <div class="menu__heading">
+                        <h2 class="menu__heading__title menu__heading__title--2">Le chic à la française</h2>
+                        <h3 class="menu__heading__subtitle menu__heading__subtitle--2">Menu</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="main-container__menu-card main-container__menu-card--3">
+                <a class="menu" href="menu_3.html" id="menu-3">
+                    <div class="menu__heading">
+                        <h2 class="menu__heading__title menu__heading__title--3">Le délice des papilles</h2>
+                        <h3 class="menu__heading__subtitle menu__heading__subtitle--3">Menu</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="main-container__menu-card main-container__menu-card--4">
+                <a class="menu" href="menu_4.html" id="menu-4">
+                    <div class="menu__heading">
+                        <h2 class="menu__heading__title menu__heading__title--4">La palette du gout</h2>
+                        <h3 class="menu__heading__subtitle menu__heading__subtitle--4">Menu</h3>
+                    </div>
+                </a>
+            </div>
+        </main>
         
-        <footer>
-            <a href=""></a>
-            <a href=""></a>
+        <div class="upcoming">
+            Prochainement
+        </div>    
+        
+        <footer >
+            <a href="mentions_legals.html" class="legal-notice">Mentions légales</a>
+            <a href="mailto:#" class="contact">Contactez-nous</a>
         </footer>
     </div>
 </body>
