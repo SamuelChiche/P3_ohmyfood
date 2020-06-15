@@ -22,11 +22,11 @@ $menu-1-color: #694145;
 
 $menu-2_bg-color: #fff5fe;
 
-$menu-2-color: #c77412 ;
+$menu-2-color: #c77412;
 
 $menu-3_bg-color: #f9f9f9;
 
-$menu-3-color:#0886fa ;
+$menu-3-color:#0886fa;
 
 $menu-4_bg-color: #fdfffd;
 
@@ -56,6 +56,7 @@ $menu-4-color: #72bf56;
 /* HOMEPAGE */
 
 .main-container {
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -64,13 +65,14 @@ $menu-4-color: #72bf56;
     margin: auto;
     
     &__menu-card {
+    
         display: flex;
         justify-content: center;
         text-align: center;
         align-items: center;
         width: 400px;
         height: 600px;
-        margin: 50px 20px 10px 0px;
+        margin: 50px 0px 10px 0px;
         box-shadow: 0px 0px 5px 5px#d8d0d0;
             
         &--1 {
@@ -88,11 +90,22 @@ $menu-4-color: #72bf56;
         &--4 {
             background-color: $menu-4_bg-color;
         }
+
         .menu {
+            transform: scale(1);
+            transition: transform 500ms;
+
+            &:hover {        
+                transform: scale(1.25);
+                opacity: 50%;
+            }
+
             &__heading {
-                &__image{
+             
+                &__image {
                     height: 60px;
                 }
+             
                 &__title {
                     font-size: 2em;
                     margin: 0;
@@ -155,7 +168,7 @@ $menu-4-color: #72bf56;
     border: 2px solid $primary-color;
     border-radius: 8px;
     color: $font-color;
-    font-size: 2em;
+    font-size: 1.8em;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
@@ -172,7 +185,8 @@ footer {
     background-color: $primary-color;
     padding: 30px 20px 30px 20px;
     color: $font-color;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
     position: sticky;
     bottom: 0;
     font-family: 'Montserrat', sans-serif;
