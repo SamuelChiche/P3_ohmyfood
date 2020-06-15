@@ -32,7 +32,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 .main-container__menu-card {
@@ -108,11 +108,14 @@ a {
   border: 2px solid #579c87;
   border-radius: 8px;
   color: #fdcb46;
-  align-content: center;
-  margin: 40px 750px 50px 750px;
   font-size: 2em;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  width: 450px;
 }
 
 footer {
@@ -125,6 +128,7 @@ footer {
   font-size: 1.5em;
   position: sticky;
   bottom: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
