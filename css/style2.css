@@ -42,11 +42,13 @@ a {
 }
 .main-container__menu-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   box-shadow: 0px 0px 5px 5px #d8d0d0;
-  width: 1200px;
-  padding-top: 50px;
+  width: 900px;
+  padding: 50px 100px 50px 100px;
   align-content: center;
+  margin-bottom: 140px;
 }
 .main-container__menu-card--1 {
   background-color: #fcdfdb;
@@ -56,14 +58,113 @@ a {
   text-align: center;
 }
 .main-container__menu-card__menu-heading__image {
-  height: 80px;
+  height: 100px;
 }
 .main-container__menu-card__menu-heading__title {
-  font-size: 2.5em;
+  font-size: 3.5em;
+  margin: 0;
+  padding-top: 30px;
 }
 .main-container__menu-card__menu-heading__title--1 {
   color: #694145;
   font-family: "Devonshire", cursive;
+}
+.main-container__menu-card__menu-list--1 {
+  font-family: "Kalam", cursive;
+  color: #694145;
+}
+.main-container__menu-card__menu-list__subtitle {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.main-container__menu-card__menu-list__group {
+  padding-bottom: 80px;
+}
+.main-container__menu-card__menu-list .subtitle-border {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-container__menu-card__menu-list .subtitle-border img {
+  padding-top: 15px;
+}
+.main-container__menu-card__menu-list__dish {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.3em;
+}
+.main-container__menu-card__menu-list .price {
+  font-weight: bold;
+}
+.main-container__menu-card .note {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-container__menu-card .note__heading {
+  color: #694145;
+  font-family: "Devonshire", cursive;
+  font-size: 2.8em;
+}
+.main-container__menu-card .note__image {
+  height: 60px;
+  margin-top: 75px;
+  margin-right: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #579c87;
+  padding: 30px 20px 30px 20px;
+  color: #fdcb46;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: sticky;
+  bottom: 0;
+  font-family: "Montserrat", sans-serif;
+}
+footer .wiggle {
+  transition: transform;
+}
+footer .wiggle:hover {
+  animation: wiggle 1s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  70% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=style2.css.map */
