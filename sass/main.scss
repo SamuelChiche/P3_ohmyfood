@@ -2,7 +2,6 @@
 
 body {
     margin: 0;
-    padding: 0;
 }
 
 a {
@@ -176,6 +175,24 @@ $menu-4-color: #72bf56;
     margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     width: 450px;
+    
+    span {
+        width: 5px;
+        height: 5px;
+        background-color: $font-color;
+        border-radius: 50%;
+        display: inline-block;
+        animation: dots 1s ease-in-out infinite; 
+    }
+
+    #dot-2{
+            animation-delay: 0.2s;
+    }
+
+    #dot-3{
+            animation-delay: 0.4s;
+    }
+
 }
 
 footer {
@@ -190,4 +207,30 @@ footer {
     position: sticky;
     bottom: 0;
     font-family: 'Montserrat', sans-serif;
+
+    .wiggle{
+        transition: transform;
+        &:hover{
+            animation: wiggle 1s;
+        }
+    }
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(2deg);}
+    20% {transform: rotate(-2deg);}
+    30% {transform: rotate(2deg);}
+    40% {transform: rotate(-2deg);}
+    50% {transform: rotate(2deg);}
+    60% {transform: rotate(-2deg);}
+    70% {transform: rotate(2deg);}
+    80% {transform: rotate(0deg);}
+}
+
+@keyframes dots{
+    50%{
+        opacity: 0;
+        transform: scale(0.7) translateY(2px);
+    }
 }

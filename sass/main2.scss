@@ -1,0 +1,103 @@
+/* GENERAL */
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* COLOR */
+
+$primary-color: #579c87;
+
+$font-color: #fdcb46;
+
+$menu-1_bg-color: #fcdfdb;
+
+$menu-1-color: #694145;
+
+$menu-2_bg-color: #fff5fe;
+
+$menu-2-color: #c77412;
+
+$menu-3_bg-color: #f9f9f9;
+
+$menu-3-color:#0886fa;
+
+$menu-4_bg-color: #fdfffd;
+
+$menu-4-color: #72bf56;
+
+$menu-hd-color: #646464;
+
+/* HEADING */
+
+.heading{
+    width: 100%;
+    text-align: center;
+    background-color: $primary-color;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title {
+        margin: 0;
+        color: $font-color;
+        font-size: 3em;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/* MAIN CONTAINER */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+
+    &__heading{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: $menu-hd-color;
+        font-size: 1.5em;
+        padding-top: 40px;
+    }
+
+    &__menu-card {
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 5px 5px#d8d0d0;
+        width: 1200px;
+        padding-top: 50px;
+        align-content: center;
+
+        &--1 {
+            background-color: $menu-1_bg-color;
+        }
+        
+        &__menu-heading{
+            justify-content: center;
+            text-align: center;
+
+            &__image{
+                height: 80px;
+            }
+
+            &__title{
+                font-size: 2.5em;
+
+                &--1 {
+                    color: $menu-1-color;
+                    font-family: 'Devonshire', cursive;
+                }
+            }
+        }
+            
+            
+    }
+}

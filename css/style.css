@@ -1,7 +1,6 @@
 /* GENERAL */
 body {
   margin: 0;
-  padding: 0;
 }
 
 a {
@@ -125,6 +124,20 @@ a {
   font-family: "Montserrat", sans-serif;
   width: 450px;
 }
+.upcoming span {
+  width: 5px;
+  height: 5px;
+  background-color: #fdcb46;
+  border-radius: 50%;
+  display: inline-block;
+  animation: dots 1s ease-in-out infinite;
+}
+.upcoming #dot-2 {
+  animation-delay: 0.2s;
+}
+.upcoming #dot-3 {
+  animation-delay: 0.4s;
+}
 
 footer {
   display: flex;
@@ -138,6 +151,48 @@ footer {
   position: sticky;
   bottom: 0;
   font-family: "Montserrat", sans-serif;
+}
+footer .wiggle {
+  transition: transform;
+}
+footer .wiggle:hover {
+  animation: wiggle 1s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  70% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(2px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
