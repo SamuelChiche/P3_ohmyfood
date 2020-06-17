@@ -23,6 +23,10 @@ $menu-2_bg-color: #fff5fe;
 
 $menu-2-color: #c77412;
 
+$menu-2-color2:#a56799;
+
+$menu-2-color3:#7251cd;
+
 $menu-3_bg-color: #f9f9f9;
 
 $menu-3-color:#0886fa;
@@ -73,18 +77,27 @@ $menu-hd-color: #646464;
         flex-direction: column;
         justify-content: center;
         box-shadow: 0px 0px 5px 5px#d8d0d0;
-        width: 900px;
-        padding: 50px 100px 50px 100px;
+        width: 1100px;
+        padding: 50px 50px 50px 50px;
         align-content: center;
         margin-bottom: 140px;
 
         &--1 {
             background-color: $menu-1_bg-color;
         }
+
+        &--2 {
+            background-color: $menu-2_bg-color;
+        }
         
         &__menu-heading{
             justify-content: center;
             text-align: center;
+
+            &--2{
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
 
             &__image{
                 height: 100px;
@@ -99,13 +112,25 @@ $menu-hd-color: #646464;
                     color: $menu-1-color;
                     font-family: 'Devonshire', cursive;
                 }
+                &--2 {
+                    color: $menu-2-color;
+                    font-family: 'Lobster Two', cursive;
+                }
             }
         }  
         
         &__menu-list {
+            
             &--1 {
                 font-family: 'Kalam', cursive;
                 color: $menu-1-color;
+                margin: 0px 70px 0px 70px;
+                
+            }
+
+            &--2{
+                font-family: 'Merriweather', serif;
+                color: $menu-2-color
             }
             
             &__subtitle{
@@ -114,10 +139,22 @@ $menu-hd-color: #646464;
                 text-align: center;
                 padding-top: 60px;
                 padding-bottom: 40px;
+                &--2 {
+                    font-size: 1.5em;
+                }                
             }
 
             &__group {
-                padding-bottom: 80px;
+                padding-bottom: 70px;
+                
+                &--maindish2{
+                    color: $menu-2-color2;
+                }
+
+                &--sweets2{
+                    color: $menu-2-color3;
+                    padding-bottom: 150px;
+                }
             }
 
             .subtitle-border {
@@ -136,6 +173,11 @@ $menu-hd-color: #646464;
                 flex-direction: row;
                 justify-content: space-between;
                 font-size: 1.3em;
+
+                &--2 {
+                    font-size: 1.2em;
+                    margin: 0px 100px 0px 100px;
+                }
             }
             .price {
                 font-weight: bold;
