@@ -99,7 +99,7 @@ $menu-hd-color: #646464;
         }
         
         &__menu-heading{
-            justify-content: center;
+            margin: auto;
             text-align: center;
 
             &--2{
@@ -121,18 +121,32 @@ $menu-hd-color: #646464;
                     font-family: 'Devonshire', cursive;
                 }
                 &--2 {
-                    color: $menu-2-color;
+                    color: rgb(219,132,39);
+                    background: linear-gradient(90deg, rgba(219,132,39,1) 0%, rgba(146,94,253,1) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                     font-family: 'Lobster Two', cursive;
                 }
                 &--3 {
-                    color: $menu-3-color;
+                    color: rgb(9,45,220);
+                    background: linear-gradient(90deg, rgba(9,45,220,1) 0%, rgba(87,173,250,1) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding-left: 10px;
                     font-family: 'Satisfy', cursive;
                     font-size: 5em;
                     padding-top: 70px;
                     padding-bottom: 70px;
                 }
                 &--4 {
-                    color: $menu-4-color;
+                    color: rgb(108,183,84);
+                    background: linear-gradient(90deg, rgba(108,183,84,1) 0%, rgba(197,254,142,1) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding-right: 10px;
                     font-family: 'Kaushan Script', cursive;
                     font-size: 5em;
                     padding-top: 70px;
@@ -170,6 +184,18 @@ $menu-hd-color: #646464;
                 text-align: center;
                 padding-top: 60px;
                 padding-bottom: 40px;
+                &:after {
+                    content: "";
+                    width: 100%;
+                    display: block;
+                    border-bottom: solid 3px;
+                    transform: scaleX(0);
+                    transition: 500ms;
+                    transform-origin: left;
+                }
+                &:hover:after {
+                    transform: scaleX(1);
+                }
                 &--2 {
                     font-size: 1.5em;
                 }

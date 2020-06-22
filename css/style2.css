@@ -63,7 +63,7 @@ a {
   background-color: #fdfffd;
 }
 .main-container__menu-card__menu-heading {
-  justify-content: center;
+  margin: auto;
   text-align: center;
 }
 .main-container__menu-card__menu-heading--2 {
@@ -83,18 +83,32 @@ a {
   font-family: "Devonshire", cursive;
 }
 .main-container__menu-card__menu-heading__title--2 {
-  color: #c77412;
+  color: #db8427;
+  background: linear-gradient(90deg, #db8427 0%, #925efd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Lobster Two", cursive;
 }
 .main-container__menu-card__menu-heading__title--3 {
-  color: #0886fa;
+  color: #092ddc;
+  background: linear-gradient(90deg, #092ddc 0%, #57adfa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 10px;
   font-family: "Satisfy", cursive;
   font-size: 5em;
   padding-top: 70px;
   padding-bottom: 70px;
 }
 .main-container__menu-card__menu-heading__title--4 {
-  color: #72bf56;
+  color: #6cb754;
+  background: linear-gradient(90deg, #6cb754 0%, #c5fe8e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 10px;
   font-family: "Kaushan Script", cursive;
   font-size: 5em;
   padding-top: 70px;
@@ -121,6 +135,18 @@ a {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 40px;
+}
+.main-container__menu-card__menu-list__subtitle:after {
+  content: "";
+  width: 100%;
+  display: block;
+  border-bottom: solid 3px;
+  transform: scaleX(0);
+  transition: 500ms;
+  transform-origin: left;
+}
+.main-container__menu-card__menu-list__subtitle:hover:after {
+  transform: scaleX(1);
 }
 .main-container__menu-card__menu-list__subtitle--2 {
   font-size: 1.5em;

@@ -70,6 +70,7 @@ a {
 .main-container__menu-card .menu__heading__title {
   font-size: 2em;
   margin: 0;
+  justify-content: center;
 }
 .main-container__menu-card .menu__heading__title--1 {
   font-family: "Devonshire", cursive;
@@ -77,15 +78,29 @@ a {
 }
 .main-container__menu-card .menu__heading__title--2 {
   font-family: "Lobster Two", cursive;
-  color: #c77412;
+  color: #db8427;
+  background: linear-gradient(90deg, #db8427 0%, #925efd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main-container__menu-card .menu__heading__title--3 {
   font-family: "Satisfy", cursive;
-  color: #0886fa;
+  color: #092ddc;
+  background: linear-gradient(90deg, #092ddc 0%, #57adfa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 4px;
 }
 .main-container__menu-card .menu__heading__title--4 {
   font-family: "Kaushan Script", cursive;
-  color: #72bf56;
+  color: #6cb754;
+  background: linear-gradient(90deg, #6cb754 0%, #c5fe8e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 3px;
 }
 .main-container__menu-card .menu__heading__subtitle {
   font-size: 3em;

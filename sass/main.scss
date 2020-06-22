@@ -108,6 +108,7 @@ $menu-4-color: #72bf56;
                 &__title {
                     font-size: 2em;
                     margin: 0;
+                    justify-content:center;
                     
                     &--1 {
                         font-family: 'Devonshire', cursive;
@@ -116,17 +117,32 @@ $menu-4-color: #72bf56;
                     
                     &--2 {
                         font-family: 'Lobster Two', cursive;
-                        color: $menu-2-color; 
+                        color: rgb(219,132,39);
+                        background: linear-gradient(90deg, rgba(219,132,39,1) 0%, rgba(146,94,253,1) 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
                     }
 
                     &--3 {
                         font-family: 'Satisfy', cursive;
-                        color: $menu-3-color;
+                        color: rgb(9,45,220);
+                        background: linear-gradient(90deg, rgba(9,45,220,1) 0%, rgba(87,173,250,1) 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        padding-left: 4px;
                     }
 
                     &--4 {
                         font-family: 'Kaushan Script', cursive;
-                        color: $menu-4-color;
+                        color: rgb(108,183,84);
+                        background: linear-gradient(90deg, rgba(108,183,84,1) 0%, rgba(197,254,142,1) 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        padding-right: 3px;
                     }
                 }
                 
