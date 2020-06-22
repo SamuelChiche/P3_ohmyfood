@@ -56,6 +56,12 @@ a {
 .main-container__menu-card--2 {
   background-color: #fff5fe;
 }
+.main-container__menu-card--3 {
+  background-color: #edefef;
+}
+.main-container__menu-card--4 {
+  background-color: #fdfffd;
+}
 .main-container__menu-card__menu-heading {
   justify-content: center;
   text-align: center;
@@ -80,6 +86,20 @@ a {
   color: #c77412;
   font-family: "Lobster Two", cursive;
 }
+.main-container__menu-card__menu-heading__title--3 {
+  color: #0886fa;
+  font-family: "Satisfy", cursive;
+  font-size: 5em;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.main-container__menu-card__menu-heading__title--4 {
+  color: #72bf56;
+  font-family: "Kaushan Script", cursive;
+  font-size: 5em;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 .main-container__menu-card__menu-list--1 {
   font-family: "Kalam", cursive;
   color: #694145;
@@ -88,6 +108,12 @@ a {
 .main-container__menu-card__menu-list--2 {
   font-family: "Merriweather", serif;
   color: #c77412;
+}
+.main-container__menu-card__menu-list--3 {
+  font-family: "Delius", cursive;
+}
+.main-container__menu-card__menu-list--4 {
+  font-family: "Delius", cursive;
 }
 .main-container__menu-card__menu-list__subtitle {
   font-size: 2em;
@@ -99,15 +125,43 @@ a {
 .main-container__menu-card__menu-list__subtitle--2 {
   font-size: 1.5em;
 }
+.main-container__menu-card__menu-list__subtitle--3 {
+  font-size: 1.5em;
+}
+.main-container__menu-card__menu-list__subtitle--4 {
+  font-size: 1.5em;
+}
 .main-container__menu-card__menu-list__group {
   padding-bottom: 70px;
 }
+.main-container__menu-card__menu-list__group--entree2 {
+  padding-bottom: 60px;
+}
 .main-container__menu-card__menu-list__group--maindish2 {
   color: #a56799;
+  padding-bottom: 60px;
 }
 .main-container__menu-card__menu-list__group--sweets2 {
   color: #7251cd;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
+}
+.main-container__menu-card__menu-list__group--entree3 {
+  padding-bottom: 60px;
+}
+.main-container__menu-card__menu-list__group--maindish3 {
+  padding-bottom: 60px;
+}
+.main-container__menu-card__menu-list__group--sweets3 {
+  padding-bottom: 200px;
+}
+.main-container__menu-card__menu-list__group--entree4 {
+  padding-bottom: 60px;
+}
+.main-container__menu-card__menu-list__group--maindish4 {
+  padding-bottom: 60px;
+}
+.main-container__menu-card__menu-list__group--sweets4 {
+  padding-bottom: 200px;
 }
 .main-container__menu-card__menu-list .subtitle-border {
   display: flex;
@@ -125,6 +179,14 @@ a {
   font-size: 1.3em;
 }
 .main-container__menu-card__menu-list__dish--2 {
+  font-size: 1.2em;
+  margin: 0px 100px 0px 100px;
+}
+.main-container__menu-card__menu-list__dish--3 {
+  font-size: 1.2em;
+  margin: 0px 100px 0px 100px;
+}
+.main-container__menu-card__menu-list__dish--4 {
   font-size: 1.2em;
   margin: 0px 100px 0px 100px;
 }

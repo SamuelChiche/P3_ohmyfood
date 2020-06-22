@@ -89,6 +89,14 @@ $menu-hd-color: #646464;
         &--2 {
             background-color: $menu-2_bg-color;
         }
+
+        &--3 {
+            background-color: #edefef;
+        }
+
+        &--4 {
+            background-color: $menu-4_bg-color;
+        }
         
         &__menu-heading{
             justify-content: center;
@@ -116,6 +124,20 @@ $menu-hd-color: #646464;
                     color: $menu-2-color;
                     font-family: 'Lobster Two', cursive;
                 }
+                &--3 {
+                    color: $menu-3-color;
+                    font-family: 'Satisfy', cursive;
+                    font-size: 5em;
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                }
+                &--4 {
+                    color: $menu-4-color;
+                    font-family: 'Kaushan Script', cursive;
+                    font-size: 5em;
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                }
             }
         }  
         
@@ -132,6 +154,15 @@ $menu-hd-color: #646464;
                 font-family: 'Merriweather', serif;
                 color: $menu-2-color
             }
+
+            &--3 {
+                font-family: 'Delius', cursive;
+
+            }
+            &--4 {
+                font-family: 'Delius', cursive;
+
+            }
             
             &__subtitle{
                 font-size: 2em;
@@ -141,19 +172,51 @@ $menu-hd-color: #646464;
                 padding-bottom: 40px;
                 &--2 {
                     font-size: 1.5em;
-                }                
+                }
+                &--3 {
+                    font-size: 1.5em;
+                }
+                &--4 {
+                    font-size: 1.5em;
+                }                    
             }
 
             &__group {
                 padding-bottom: 70px;
                 
+                &--entree2 {
+                    padding-bottom: 60px;
+                }
                 &--maindish2{
                     color: $menu-2-color2;
+                    padding-bottom: 60px;
                 }
 
                 &--sweets2{
                     color: $menu-2-color3;
-                    padding-bottom: 150px;
+                    padding-bottom: 200px;
+                }
+                &--entree3 {
+                    padding-bottom: 60px;
+                }
+
+                &--maindish3{
+                    padding-bottom: 60px;
+                }
+
+                &--sweets3{
+                    padding-bottom: 200px;
+                }
+                &--entree4 {
+                    padding-bottom: 60px;
+                }
+
+                &--maindish4{
+                    padding-bottom: 60px;
+                }
+
+                &--sweets4{
+                    padding-bottom: 200px;
                 }
             }
 
@@ -175,6 +238,15 @@ $menu-hd-color: #646464;
                 font-size: 1.3em;
 
                 &--2 {
+                    font-size: 1.2em;
+                    margin: 0px 100px 0px 100px;
+                }
+
+                &--3 {
+                    font-size: 1.2em;
+                    margin: 0px 100px 0px 100px;
+                }
+                &--4 {
                     font-size: 1.2em;
                     margin: 0px 100px 0px 100px;
                 }
