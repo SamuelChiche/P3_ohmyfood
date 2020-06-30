@@ -101,8 +101,13 @@ $menu-4-color: #72bf56;
 
             &__heading {
              
-                &__image {
-                    height: 60px;
+                #icone {
+                    font-size: 3.6em;
+                    color: #f05160;
+                    background: linear-gradient(90deg,#f05160 0%, #f6916a 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
              
                 &__title {
@@ -221,32 +226,106 @@ footer {
     font-size: 1.2em;
     font-weight: bold;
     position: sticky;
+    position: -webkit-sticky;
     bottom: 0;
     font-family: 'Montserrat', sans-serif;
 
     .wiggle{
         transition: transform;
         &:hover{
-            animation: wiggle 1s;
+            animation: wiggle 1.3s;
         }
     }
 }
 
 @keyframes wiggle {
     0% {transform: rotate(0deg);}
-    10% {transform: rotate(2deg);}
+    5% {transform: rotate(2deg);}
+    10% {transform: rotate(-2deg);}
+    15% {transform: rotate(2deg);}
     20% {transform: rotate(-2deg);}
-    30% {transform: rotate(2deg);}
+    25% {transform: rotate(2deg);}
+    30% {transform: rotate(-2deg);}
+    35% {transform: rotate(2deg);}
     40% {transform: rotate(-2deg);}
-    50% {transform: rotate(2deg);}
+    45% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    55% {transform: rotate(2deg);}
     60% {transform: rotate(-2deg);}
-    70% {transform: rotate(2deg);}
-    80% {transform: rotate(0deg);}
+    65% {transform: rotate(2deg);}
+    70% {transform: rotate(-2deg);}
+    75% {transform: rotate(2deg);}
+    80% {transform: rotate(-2deg);}
+    85% {transform: rotate(2deg);}
+    90% {transform: rotate(0deg);}
 }
 
 @keyframes dots{
     50%{
         opacity: 0;
         transform: scale(0.7) translateY(2px);
+    }
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+
+    .heading{
+        &__title{
+            font-size: 2.5em;
+        }
+    }
+    .main-container{
+        &__menu-card{
+            width: 300px;
+            height: 450px;
+            
+            .menu{
+                &__heading{
+                    &__title{
+                        font-size: 1.8em;
+                    }
+                    &__subtitle{
+                        font-size: 2em;
+                    }
+                    #icone{
+                        font-size: 3em;
+                    }
+                }
+            }
+            
+        }
+    }
+    .upcoming{
+        font-size: 1.5em;
+    }
+    footer{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .main-container{
+        flex-wrap: inherit;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upcoming{
+        font-size: 1.3em;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .main-container{
+        &__menu-card{
+            width: 80%;
+        }
+    }
+    .upcoming{
+        font-size: 1.2em;
+        width: 70%;
     }
 }

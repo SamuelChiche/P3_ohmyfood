@@ -70,8 +70,13 @@ a {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.main-container__menu-card__menu-heading__image {
-  height: 100px;
+.main-container__menu-card__menu-heading #icone-top {
+  font-size: 6em;
+  color: #f05160;
+  background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main-container__menu-card__menu-heading__title {
   font-size: 3.5em;
@@ -229,10 +234,15 @@ a {
   font-family: "Devonshire", cursive;
   font-size: 2.8em;
 }
-.main-container__menu-card .note__image {
-  height: 60px;
+.main-container__menu-card .note #icone-bottom {
   margin-top: 75px;
-  margin-right: 30px;
+  margin-right: 25px;
+  font-size: 3.5em;
+  color: #f05160;
+  background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -252,36 +262,252 @@ footer .wiggle {
   transition: transform;
 }
 footer .wiggle:hover {
-  animation: wiggle 1s;
+  animation: wiggle 1.3s;
 }
 
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
   }
+  5% {
+    transform: rotate(2deg);
+  }
   10% {
+    transform: rotate(-2deg);
+  }
+  15% {
     transform: rotate(2deg);
   }
   20% {
     transform: rotate(-2deg);
   }
+  25% {
+    transform: rotate(2deg);
+  }
   30% {
+    transform: rotate(-2deg);
+  }
+  35% {
     transform: rotate(2deg);
   }
   40% {
     transform: rotate(-2deg);
   }
+  45% {
+    transform: rotate(2deg);
+  }
   50% {
+    transform: rotate(-2deg);
+  }
+  55% {
     transform: rotate(2deg);
   }
   60% {
     transform: rotate(-2deg);
   }
+  65% {
+    transform: rotate(2deg);
+  }
   70% {
+    transform: rotate(-2deg);
+  }
+  75% {
     transform: rotate(2deg);
   }
   80% {
+    transform: rotate(-2deg);
+  }
+  85% {
+    transform: rotate(2deg);
+  }
+  90% {
     transform: rotate(0deg);
+  }
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1300px) {
+  .heading__title {
+    font-size: 2.5em;
+  }
+
+  .main-container__heading {
+    font-size: 1.3em;
+    padding-top: 40px;
+  }
+  .main-container__menu-card {
+    width: 70%;
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 140px;
+  }
+  .main-container__menu-card__menu-heading--2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .main-container__menu-card__menu-heading #icone-top {
+    font-size: 4.5em;
+  }
+  .main-container__menu-card__menu-heading__title {
+    font-size: 3em;
+    margin: 0;
+    padding-top: 30px;
+  }
+  .main-container__menu-card__menu-heading__title--1 {
+    color: #694145;
+    font-family: "Devonshire", cursive;
+  }
+  .main-container__menu-card__menu-heading__title--2 {
+    font-family: "Lobster Two", cursive;
+  }
+  .main-container__menu-card__menu-heading__title--3 {
+    padding-left: 10px;
+    font-size: 5em;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .main-container__menu-card__menu-heading__title--4 {
+    padding-right: 10px;
+    font-size: 5em;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .main-container__menu-card__menu-list--1 {
+    font-family: "Kalam", cursive;
+    color: #694145;
+    margin: 0px 70px 0px 70px;
+  }
+  .main-container__menu-card__menu-list__subtitle {
+    font-size: 1.7em;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .main-container__menu-card__menu-list__subtitle:after {
+    content: "";
+    width: 100%;
+    border-bottom: solid 3px;
+  }
+  .main-container__menu-card__menu-list__subtitle--2 {
+    font-size: 1.5em;
+  }
+  .main-container__menu-card__menu-list__subtitle--3 {
+    font-size: 1.5em;
+  }
+  .main-container__menu-card__menu-list__subtitle--4 {
+    font-size: 1.5em;
+  }
+  .main-container__menu-card__menu-list__group {
+    padding-bottom: 30px;
+  }
+  .main-container__menu-card__menu-list__group--entree2 {
+    padding-bottom: 60px;
+  }
+  .main-container__menu-card__menu-list__group--maindish2 {
+    padding-bottom: 60px;
+  }
+  .main-container__menu-card__menu-list__group--sweets2 {
+    padding-bottom: 200px;
+  }
+  .main-container__menu-card__menu-list__group--entree3 {
+    padding-bottom: 60px;
+  }
+  .main-container__menu-card__menu-list__group--maindish3 {
+    padding-bottom: 60px;
+  }
+  .main-container__menu-card__menu-list__group--sweets3 {
+    padding-bottom: 200px;
+  }
+  .main-container__menu-card__menu-list__group--entree4 {
+    padding-bottom: 60px;
+  }
+  .main-container__menu-card__menu-list__group--maindish4 {
+    padding-bottom: 60px;
+  }
+  .main-container__menu-card__menu-list__group--sweets4 {
+    padding-bottom: 200px;
+  }
+  .main-container__menu-card__menu-list__group .subtitle-border img {
+    padding-top: 25px;
+    width: 30%;
+    height: 10%;
+  }
+  .main-container__menu-card__menu-list__dish {
+    font-size: 1.1em;
+  }
+  .main-container__menu-card__menu-list__dish--2 {
+    font-size: 1.2em;
+    margin: 0px 100px 0px 100px;
+  }
+  .main-container__menu-card__menu-list__dish--3 {
+    font-size: 1.2em;
+    margin: 0px 100px 0px 100px;
+  }
+  .main-container__menu-card__menu-list__dish--4 {
+    font-size: 1.2em;
+    margin: 0px 100px 0px 100px;
+  }
+  .main-container .note__heading {
+    font-size: 2em;
+  }
+  .main-container .note #icone-bottom {
+    margin-top: 55px;
+    margin-right: 25px;
+    font-size: 3em;
+  }
+
+  .upcoming {
+    font-size: 1.5em;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main-container__menu-card__menu-list--1 {
+    margin: 0px 30px 0px 30px;
+  }
+  .main-container__menu-card__menu-list__dish {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-container__menu-card__menu-heading #icone-top {
+    font-size: 3.5em;
+  }
+  .main-container__menu-card__menu-heading__title {
+    font-size: 2.5em;
+  }
+  .main-container__menu-card__menu-list--1 {
+    margin: 0px 30px 0px 30px;
+  }
+  .main-container__menu-card__menu-list__subtitle {
+    font-size: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .main-container__menu-card__menu-list__group .subtitle-border img {
+    padding-top: 0;
+  }
+  .main-container__menu-card__menu-list__dish {
+    font-size: 1em;
+  }
+  .main-container__menu-card__menu-list__dish .price {
+    padding-left: 20px;
+  }
+
+  .upcoming {
+    font-size: 1.3em;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-container__menu-card {
+    width: 80%;
+  }
+
+  .upcoming {
+    font-size: 1.2em;
+    width: 70%;
   }
 }
 
