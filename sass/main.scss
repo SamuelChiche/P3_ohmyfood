@@ -329,3 +329,17 @@ footer {
         width: 70%;
     }
 }
+
+@media screen and (max-width: 350px){
+    footer{
+        flex-direction: column;
+        padding: 20px 80px 20px 80px;
+        #legal_mention{
+            padding-bottom: 5px;
+        }
+        #contact{
+            padding-top: 5px;
+            border-top: solid 2px $font-color;
+        }
+    }
+}
