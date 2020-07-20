@@ -85,7 +85,7 @@ a {
   font-family: "Lobster Two", cursive;
   color: #db8427;
   background: linear-gradient(90deg, #db8427 0%, #925efd 100%);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -93,7 +93,7 @@ a {
   font-family: "Satisfy", cursive;
   color: #092ddc;
   background: linear-gradient(90deg, #092ddc 0%, #57adfa 100%);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-left: 4px;
@@ -102,7 +102,7 @@ a {
   font-family: "Kaushan Script", cursive;
   color: #6cb754;
   background: linear-gradient(90deg, #6cb754 0%, #c5fe8e 100%);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-right: 3px;
@@ -132,7 +132,6 @@ a {
 .upcoming {
   background-color: #579c87;
   text-align: center;
-  border: 2px solid #579c87;
   border-radius: 8px;
   color: #fdcb46;
   font-size: 1.8em;
@@ -169,7 +168,6 @@ footer {
   font-size: 1.2em;
   font-weight: bold;
   position: sticky;
-  position: -webkit-sticky;
   bottom: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -246,6 +244,29 @@ footer .wiggle:hover {
   }
 }
 /* RESPONSIVE */
+@media screen and (min-width: 2000px) {
+  .main-container {
+    max-width: 1500px;
+  }
+  .main-container__menu-card {
+    width: 600px;
+    height: 900px;
+  }
+  .main-container__menu-card .menu__heading__title {
+    font-size: 3.3em;
+  }
+  .main-container__menu-card .menu__heading__subtitle {
+    font-size: 3.8em;
+  }
+  .main-container__menu-card .menu__heading #icone {
+    font-size: 5em;
+  }
+
+  .upcoming {
+    font-size: 2.5em;
+    width: 650px;
+  }
+}
 @media screen and (max-width: 900px) {
   .heading__title {
     font-size: 2.5em;
