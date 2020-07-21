@@ -68,7 +68,7 @@ a {
   font-size: 3.6em;
   color: #f05160;
   background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
