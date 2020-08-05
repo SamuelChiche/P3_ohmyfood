@@ -59,6 +59,12 @@ a {
 .main-container__menu-card .menu {
   transform: scale(1);
   transition: transform 500ms;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .main-container__menu-card .menu:hover {
   transform: scale(1.25);
@@ -273,6 +279,10 @@ footer .wiggle:hover {
   }
 
   .main-container__menu-card {
+    width: 300px;
+    height: 450px;
+  }
+  .main-container__menu-card .menu {
     width: 300px;
     height: 450px;
   }

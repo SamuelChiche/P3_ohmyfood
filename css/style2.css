@@ -90,7 +90,7 @@ a {
 .main-container__menu-card__menu-heading__title--2 {
   color: #db8427;
   background: linear-gradient(90deg, #db8427 0%, #925efd 100%);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Lobster Two", cursive;
@@ -98,7 +98,7 @@ a {
 .main-container__menu-card__menu-heading__title--3 {
   color: #092ddc;
   background: linear-gradient(90deg, #092ddc 0%, #57adfa 100%);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-left: 10px;
@@ -110,7 +110,7 @@ a {
 .main-container__menu-card__menu-heading__title--4 {
   color: #6cb754;
   background: linear-gradient(90deg, #6cb754 0%, #c5fe8e 100%);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-right: 10px;
@@ -580,6 +580,18 @@ footer .wiggle:hover {
   }
   .main-container__menu-card__menu-list__subtitle--4 {
     font-size: 4.5vw;
+  }
+  .main-container__menu-card__menu-list__dish {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-container__menu-card__menu-list__dish .dish {
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .main-container__menu-card__menu-list__dish .price {
+    padding: 0;
+    margin: 0;
   }
 
   .upcoming {
